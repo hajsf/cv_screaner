@@ -115,7 +115,7 @@ func getSkills(w http.ResponseWriter, r *http.Request) {
 			if found := len(uniqueSlice); found == 0 {
 				uniqueSlice = []string{"No single match had been found."}
 			} else {
-				uniqueSlice = append([]string{fmt.Sprintf("#%02d skills found: ", len(uniqueSlice))}, uniqueSlice...)
+				uniqueSlice = append([]string{fmt.Sprintf("%02d skills found: ", len(uniqueSlice))}, uniqueSlice...)
 			}
 		}
 		//	p := strings.Split(input.Skills, "|")
