@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  width: 100%;
+  min-height: 40vh; /* changed */
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f1f1f1;
+  align-content:flex-start;
+}
+
+.flex-container > div {
+  /* max-width: 100%;  can remove  */
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  margin: 5px;
+  font-size: clamp(1rem, 3vw, 1em); /* changed */
+}
+
+#path,
+#skills {
+  /* will prevent resizing horizontally */
+  /* resize:vertical; */
+  /*  width: 250px; */
+  /*  max-width: 250px; */
+  /*  min-width: 250px; */
+  width: 100%; /* added */
+}
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+table, #tblData {
+  border-collapse: collapse;
+  width: 100%;
+}
+table th:first-child, table tr td:first-child
+{
+    width: 150px;
+}
+
+legend {
+    padding: 2px;    
+}

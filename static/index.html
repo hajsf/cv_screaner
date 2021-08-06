@@ -1,0 +1,43 @@
+<html lang="ar" class="notranslate" translate="no">
+<head>
+    <meta charset="utf-8">
+    <meta name="google" content="notranslate" /> 
+    <title>CVs quick screaning</title>
+    <link rel="shortcut icon" href="/static/favicon.png">
+    <link rel="stylesheet" href="/static/stylesheets/main.css">
+    <script type="text/javascript" src="/static/scripts/main.js"></script>
+</head>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+    <div class="flex-container">
+        <div class="item" style="flex-grow: 1">
+            <label for="path">Enter CVs folder path:</label>
+            <input id="path" placeholder="cvs path"/>
+            <label for="path">Enter Key Words/Skills to be searched:</label>
+            <textarea id="skills" style="resize:none; height: 150px;" placeholder="Key skills" rows="4" cols="50"></textarea>
+            <button onclick="send()">Search CVs</button>
+           
+        </div>
+        <div class="item" style="flex-grow: 50"> 
+            <button onclick="exportTableToExcel('tblheader', 'cvs-scanning')">Export Table Data To Excel File</button>           
+                <table id="tblheader">
+                    <tr>
+                        <th>Name</th>
+                        <th>Skills</th>
+                    </tr>
+                </table>
+                <div style="width:100%; height:155px; overflow:auto;">
+                    <table id="tbl" >
+                        <tbody id="tblData"></tbody>
+                    </table>
+                </div>
+        </div>
+    </div>
+    <div>For adding new functionalities, please cleck <a href="mailto:hyousef@msn.com">here</a> to email me.<div>
+    <div class="item" style="flex-grow: 50"></div>
+        <embed id="pdf" type="application/pdf"
+        src="/static/files/blank.pdf"
+        style="width: 100%;"
+        height="600">
+    </div>
+</body>
+</html>
