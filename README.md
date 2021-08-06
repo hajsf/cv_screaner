@@ -1,6 +1,8 @@
 # cv screaner
 CV screener based on selected key words/skills, result can be exported easily to MS excel 
 
+![image](https://user-images.githubusercontent.com/46838626/128532726-dbcdaf36-573b-4ab6-ac23-c74475d96910.png)
+
 For the first run at Windows, you'll be asked if an app required from the app store, as shown:
 
 ![image](https://user-images.githubusercontent.com/46838626/128510121-c48d66a1-2e9a-4db7-8eeb-c79bff92762a.png)
